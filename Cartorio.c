@@ -68,7 +68,7 @@ int consulta()
 	char cpf[40];
 	char conteudo[200];
 	
-	printf("Digite o CPF a ser consultado: ");
+	printf("Digite o CPF a ser consultado: "); //Recebendo qual usuário vai ser consultado
 	scanf("%s", cpf);
 	
 	FILE *file;
@@ -125,11 +125,9 @@ int main()
 	if (comparacao == 0)
 	{
 
-
+		system("cls");
 		for(laco=1;laco=1;)
 		{
-	
-			system("cls");
 			
     		setlocale(LC_ALL, "Portuguese"); //Definindo a Linguagem
   	
@@ -139,7 +137,7 @@ int main()
 			printf("\t2 - Consultar nomes\n");
 			printf("\t3 - Deletar nomes\n"); 
 			printf("\t4 - Sair do sistema\n\n");
-			printf("Opção:"); //Fim do menu
+			printf("Opção: "); //Fim do menu
     
    			scanf("%d", &opcao); //Armazenando a escolha do usuário
     
@@ -171,6 +169,7 @@ int main()
 			} //Fim da seleção
 		} 	
 	}
+	
 	else
 		printf("Senha incorreta!");
 
